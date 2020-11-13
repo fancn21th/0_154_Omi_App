@@ -8,8 +8,8 @@
     </block>
   </view> -->
   <todo></todo>
-  <view class="usermotto">
+  <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}-{{reverseMotto}}-{{newProp}}</text>
   </view>
-  <test-store />
+  <test-store /> -->
 </view>

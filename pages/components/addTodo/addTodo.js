@@ -1,24 +1,16 @@
-// pages/components/addTodo/addTodo.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-  },
+import create from '../../../utils/create'
+import store from '../../../store/index'
 
-  /**
-   * 组件的初始数据
-   */
+create.Component(store, {
   data: {
-    value: ''
+    value: ""
   },
-
-  /**
-   * 组件的方法列表
-   */
   methods: {
     onAddTodoClick() {
-      this.triggerEvent('onAddTodo', this.data.value)
+      this.store.addTodo(this.data.value)
+      this.setData({
+        value: ''
+      })
     }
   }
 })

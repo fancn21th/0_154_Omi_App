@@ -1,4 +1,5 @@
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 const v4 = () => {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
@@ -29,13 +30,18 @@ export const fetchTodos = (filter) => delay(1000).then(() => {
   if (Math.random() > 0.9) {
     throw new Error('Boom!');
   }
+
+  const remoteTodos = [
+    ...fakeTodos.todos
+  ]
+
   switch (filter) {
     case 'all':
-      return fakeTodos.todos;
+      return remoteTodos;
     case 'active':
-      return fakeTodos.todos.filter(t => !t.completed);
+      return remoteTodos.filter(t => !t.completed);
     case 'completed':
-      return fakeTodos.todos.filter(t => t.completed);
+      return remoteTodos.filter(t => t.completed);
     default:
       throw new Error(`Unknown filter: ${filter}`);
   }

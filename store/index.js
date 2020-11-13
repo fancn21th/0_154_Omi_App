@@ -1,4 +1,7 @@
-import { fetchTodos } from '../api/index'
+import {
+  fetchTodos,
+  addTodo
+} from '../api/index'
 
 export default {
   data: {
@@ -28,6 +31,12 @@ export default {
     const self = this
     fetchTodos(filter).then(todos => {
       self.data.todos = todos
+    })
+  },
+  addTodo(text) {
+    const self = this
+    addTodo(text).then(todo => {
+      self.data.todos.push(todo)
     })
   }
 }

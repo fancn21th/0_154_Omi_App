@@ -17,8 +17,5 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onAddTodo: (e) => {
-      console.log('i am added', e.detail)
-    }
   }
 })

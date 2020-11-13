@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "addTodo": "/pages/components/addTodo/addTodo"
+    "addTodo": "/pages/components/addTodo/addTodo",
+    "todoList": "/pages/components/todoList/todoList"
   }
 }

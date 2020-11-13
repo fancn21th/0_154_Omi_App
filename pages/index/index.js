@@ -67,6 +67,8 @@ create.Page(store, {
 
     //store.offChange(handler)
 
+    store.fetchTodos('all')
+
   },
   getUserInfo: function (e) {
     this.store.data.userInfo = e.detail.userInfo

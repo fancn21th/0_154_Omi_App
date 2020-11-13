@@ -1,0 +1,8 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.item {
+  margin: 10rpx;
+}

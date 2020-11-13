@@ -1,1 +1,2 @@
-<addTodo bind:onAddTodo="onAddTodo"/>
+<addTodo/>
+<todoList />

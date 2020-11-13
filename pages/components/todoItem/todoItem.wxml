@@ -1,0 +1,4 @@
+<view>
+  <text wx:if="{{ completed }}" class="complete">{{ text }}</text>
+  <text wx:else class="active">{{ text }}</text>
+</view>

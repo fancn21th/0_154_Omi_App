@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "todoItem": "/pages/components/todoItem/todoItem"
+  }
+}

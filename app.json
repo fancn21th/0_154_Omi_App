@@ -2,8 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/index-with-data/index",
-    "pages/logs/logs",
-    "pages/todos/index"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

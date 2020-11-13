@@ -4,6 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    id: {
+      type: Number,
+      value: 0
+    },
     text: {
       type: String,
       value: ""
@@ -24,6 +28,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onToogle() {
+      this.triggerEvent('onToogle', this.id)
+    }
   }
 })

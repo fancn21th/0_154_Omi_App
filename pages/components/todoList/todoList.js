@@ -6,5 +6,10 @@ create.Component({
     todoList() {
       return Object.keys(this.todos).map(key => this.todos[key])
     }
+  },
+  methods: {
+    onToogle(payload) {
+      console.log(payload.detail)
+    }
   }
 })

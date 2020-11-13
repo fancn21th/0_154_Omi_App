@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "test-store": "/components/test-store/test-store",
+    "todo": "/pages/components/todo/todo"
+  }
+}

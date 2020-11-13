@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "addTodo": "/pages/components/addTodo/addTodo"
+  }
+}

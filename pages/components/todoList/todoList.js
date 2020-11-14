@@ -2,10 +2,10 @@ import create from '../../../utils/create'
 import store from '../../../store/index'
 
 create.Component(store, {
-  use: ['todos'],
+  use: ['todo.todos'],
   methods: {
-    onToggle(payload) {
-      console.log(payload.detail)
+    onToggle({ detail }) {
+      console.log(detail)
     }
   },
   ready() {

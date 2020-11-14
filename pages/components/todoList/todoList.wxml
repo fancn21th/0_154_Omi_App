@@ -1,1 +1,1 @@
-<statelessTodoList todos="{{todos}}" />
+<statelessTodoList todos="{{todo.todos}}" bind:onToggle="onToggle" />

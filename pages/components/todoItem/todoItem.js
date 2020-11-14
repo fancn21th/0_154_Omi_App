@@ -29,7 +29,11 @@ Component({
    */
   methods: {
     onToggle() {
-      this.triggerEvent('onToggle', this.id)
+      // 这是一个 子组件 往 祖先组件 传递 事件 的场景
+      this.triggerEvent('onToggle', this.id, {
+        bubbles: true,
+        composed: true
+      })
     }
   }
 })

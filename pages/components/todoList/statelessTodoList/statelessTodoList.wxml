@@ -1,5 +1,5 @@
 <view class="list">
   <block class="item" wx:for="{{todos}}" wx:for-item="todo" wx:key="unique">
-    <todoItem id="{{todo.id}}" text="{{todo.text}}" completed="{{todo.completed}}" bind:onToggle="onToggle" />
+    <todoItem id="{{todo.id}}" text="{{todo.text}}" completed="{{todo.completed}}" />
   </block>
 </view>

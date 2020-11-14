@@ -5,16 +5,11 @@ import {
 
 export default {
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    logs: [],
     todos: {},
     filteredTodos: {
       all: {
         ids: []
-      },
+      }, 
       completed: {
         ids: []
       },

@@ -1,7 +1,7 @@
 import {
   fetchTodos as fetchTodosApi,
   addTodo as addTodoApi,
-  toggle as toggleTodoApi
+  toggleTodo as toggleTodoApi
 } from '../api/index'
 
 const data = {
@@ -22,6 +22,7 @@ export function addTodo(text) {
 }
 export function toggleTodo(id) {
   toggleTodoApi(id).then(todo => {
-    data.todos.push(todo)
+    let match = data.todos.find(todo => todo.id === id)
+    match = todo
   })
 }

@@ -1,5 +1,6 @@
 <view class="list">
   <block class="item" wx:for="{{todos}}" wx:for-item="todo" wx:key="unique">
+    <!-- 场景C -->
     <todoItem id="{{todo.id}}" text="{{todo.text}}" completed="{{todo.completed}}" />
   </block>
 </view>

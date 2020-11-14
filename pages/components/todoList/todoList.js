@@ -4,8 +4,10 @@ import store from '../../../store/index'
 create.Component(store, {
   use: ['todo.todos'],
   methods: {
-    onToggle({ detail }) {
-      console.log(detail)
+    onToggle({
+      detail: todoId
+    }) {
+      this.store.toggleTodo(todoId)
     }
   },
   ready() {

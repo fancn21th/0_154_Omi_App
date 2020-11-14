@@ -1,6 +1,7 @@
 import create from '../../../utils/create'
 import store from '../../../store/index'
 
+// 场景D
 create.Component(store, {
   data: {
     value: ""

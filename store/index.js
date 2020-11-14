@@ -35,7 +35,7 @@ export default {
       self.data.todos.push(todo)
     })
   },
-  toogleTodo(id) {
+  toggleTodo(id) {
     const self = this
     toggleTodo(id).then(todo => {
       self.data.todos.push(todo)

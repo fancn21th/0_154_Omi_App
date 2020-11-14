@@ -1,4 +1,4 @@
 <view>
-  <text wx:if="{{ completed }}" class="complete" bindtap="onToogle">{{ text }}</text>
-  <text wx:else class="active" bindtap="onToogle">{{ text }}</text>
+  <text wx:if="{{ completed }}" class="complete" bindtap="onToggle">{{ text }}</text>
+  <text wx:else class="active" bindtap="onToggle">{{ text }}</text>
 </view>

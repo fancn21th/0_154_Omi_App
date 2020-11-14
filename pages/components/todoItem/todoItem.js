@@ -28,8 +28,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onToogle() {
-      this.triggerEvent('onToogle', this.id)
+    onToggle() {
+      this.triggerEvent('onToggle', this.id)
     }
   }
 })

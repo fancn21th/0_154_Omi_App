@@ -1,15 +1,14 @@
 import create from '../../../utils/create'
+import store from '../../../store/index'
 
-create.Component({
+create.Component(store, {
   use: ['todos'],
-  computed: {
-    todoList() {
-      return Object.keys(this.todos).map(key => this.todos[key])
-    }
-  },
   methods: {
-    onToogle(payload) {
+    onToggle(payload) {
       console.log(payload.detail)
     }
+  },
+  ready() {
+    this.store.fetchTodos('all')
   }
 })

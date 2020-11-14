@@ -12,9 +12,6 @@ create.Page(store, {
       console.log(evt)
     }
     store.onChange(handler)
-
     //store.offChange(handler)
-
-    store.fetchTodos('all')
   },
 })

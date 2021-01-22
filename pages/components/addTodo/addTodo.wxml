@@ -2,4 +2,5 @@
 <view class="addTodo">
     <input maxlength="10" placeholder="输入Todo" model:value="{{value}}" />
     <button type="primary" bindtap="onAddTodoClick">Add Todo</button>
+    <checkbox checked="{{check.checked}}" bindtap="onToggleCheck" />
 </view>

@@ -3,6 +3,7 @@ import store from '../../../store/index'
 
 // 场景D
 create.Component(store, {
+  use: ['check.checked'],
   data: {
     value: ""
   },
@@ -12,6 +13,9 @@ create.Component(store, {
       this.setData({
         value: ''
       })
+    },
+    onToggleCheck() {
+      this.store.toggleCheck()
     }
   }
 })

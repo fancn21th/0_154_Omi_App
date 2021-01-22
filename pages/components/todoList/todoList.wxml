@@ -1,2 +1,3 @@
 <!-- 场景A -->
 <statelessTodoList todos="{{todo.todos}}" bind:onToggle="onToggle" />
+<checkbox checked="{{check.checked}}" />

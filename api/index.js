@@ -27,7 +27,7 @@ const fakeTodos = {
 };
 
 export const fetchTodos = (filter) => delay(1000).then(() => {
-  if (Math.random() > 0.9) {
+  if (Math.random() > 0.95) {
     throw new Error('Boom!');
   }
 
